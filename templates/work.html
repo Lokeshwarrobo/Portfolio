@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/wokstyle.css' %}">
+</head>
+<body>
+
+<div class ='nav'>
+    <label for="show-menu" class="show-menu">Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a  style="color: #ffffff" href="{% url 'home' %}" >Home</a></li>
+
+        <li>
+            <a style="color: #ffffff" href="{% url 'work' %}">Projects</a>
+
+        </li>
+        <li><a style="color: #ffffff" href="{% url 'certi' %}">Certificates</a></li>
+        <li><a style="color: #ffffff" href="#">Contact</a></li>
+    </ul>
+    </div>
+<div class="Intro">
+    <h1>From writing articles on blog </h1>
+    <h1>to Web-designing</h1>
+</div>
+{% for arti in robo %}
+<div data-ix="fade" class="building-parent building-haiku" style="opacity: 1; transition: opacity 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;">
+    <div class="flex-blocks-parent portfolio-blocks-parent">
+        <div class="flex-block building-block-paragraph">
+            <a class="building-text">
+                <a href="{% url 'detail' arti.pk %}" ><h1>{{ arti.Title }}</h1></a>
+                <div class="portfolio-description">
+                    <p class="portfolio-tagline">YC W18. Design &amp;&nbsp;Development&nbsp;tooling<span class="chevron-small">&nbsp;</span></p></div></a>
+                <h4> Learn more&nbsp;<span class="chevron">&nbsp;&nbsp;</span></h4></div>
+        </div><a  class="flex-block building-block w-inline-block w-clearfix">
+        <img src="{{arti.Pic.url}}" alt="building-thumbnail"></a></div>
+{% endfor %}
+</body>
+</html>

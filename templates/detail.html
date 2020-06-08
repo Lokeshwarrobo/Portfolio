@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class ='nav'>
+    <label for="show-menu" class="show-menu">Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a  style="color: #ffffff" href="{% url 'home' %}" >Home</a></li>
+
+        <li>
+            <a style="color: #ffffff" href="{% url 'work' %}">Projects</a>
+
+        </li>
+        <li><a style="color: #ffffff" href="{% url 'certi' %}">Certificates</a></li>
+        <li><a style="color: #ffffff" href="#">Contact</a></li>
+    </ul>
+    </div>
+
+<img src="/static/img/download.png" alt="">
+<div class="text">
+<h1>{{ object.Title }}</h1>
+    <p>{{ object.Description }}</p>
+    </div>
+
+</body>
+</html>

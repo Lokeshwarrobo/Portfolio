@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('/static/img/WhatsApp Image 2020-05-29 at 08.47.39.jpeg');
+    background-repeat: no-repeat;
+    background-position: 66% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* nav bar */
+.nav a {
+    : white;
+}
+.nav {
+    margin-top: 5px;
+    margin-left: 80px;
+
+}
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:90px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+/* nav bar */
+
+.container-fluid {
+    width: 98%;
+}
+.container-fluid h1 {
+    margin-left: 10px;
+}
+.container-fluid img {
+    margin-left: 600px;
+    width: 30%;
+}
+/* Intro */
+.Intro {
+    margin-top: 220px;
+    margin-left: 60px;
+}
+.Intro h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: 300;
+}
+.Intro a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f0860c;
+    font-weight: 400;
+}
+.Intro h1 {
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+.Intro p {
+    font-weight: 600;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* Intro */
+/* Intro animations */
+
+.Intro {
+            animation: fadeInAnimation ease 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: inherit;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+/* Intro animations */
+
+html.w-mod-js [data-ix=fade] {
+    opacity: 0;
+}
+.building-parent.building-haiku {
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#000),to(#172229)),-webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
+    background-image: linear-gradient(0deg,#000,#172229),linear-gradient(180deg,#000,#000);
+}
+@media screen and (max-width: 479px) {
+    .flex-block {
+        padding: 30px;
+    }
+    .building-parent {
+        height: auto;
+    }
+}
+@media screen and (max-width: 767px){
+    .flex-block {
+        padding: 30px;
+    }
+
+.building-parent {
+    height: auto;
+    padding: 20px;
+}
+}
+@media screen and (max-width: 991px) {
+
+    .flex-block {
+        padding: 30px;
+    }
+
+    .building-parent {
+        padding: 50px;
+    }
+
+    .building-parent {
+        overflow: hidden;
+        height: auto;
+        padding: 100px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, .8)));
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .building-thumbnail {
+        width: 60%;
+        margin-top: 30px;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .building-thumbnail {
+        width: 60%;
+        height: auto;
+        margin-top: 30px;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .building-thumbnail {
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 0;
+        height: auto;
+        max-height: none;
+
+    }
+
+}
+img {
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media screen and (max-width: 479px) {
+    .flex-block {
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+
+    .flex-block, .flex-block.ethos-block {
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+}
+
+@media screen and (max-width: 991px){
+.flex-blocks-parent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+}
+.flex-blocks-parent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    color: #fff;
+    text-decoration: none;
+}
+}
+.flex-block.building-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: rgba(34,34,34,0);
+}
+.flex-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+    padding: 50px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex: 30%;
+    -ms-flex: 30%;
+    flex: 50%;
+    border-radius: 10px;
+
+}
+.flex-block, .flex-block.ethos-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+.w-inline-block {
+    max-width: 10%;
+    display: inline-block;
+}
+a {
+    text-decoration: underline;
+}
+a {
+    background-color: transparent;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.flex-blocks-parent {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+

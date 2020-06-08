@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<div class ='nav'>
+    <label for="show-menu" class="show-menu">Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li><a href="{% url 'home' %}" >Home</a></li>
+        <li>
+            <a href="#">About </a>
+
+        </li>
+        <li>
+            <a href="{% url 'work' %}">Projects</a>
+
+        </li>
+        <li><a href="{% url 'certi' %}">Certificates</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+
+
+    </div>
+
+
+<div class="Intro">
+    <h2>Hi,I'm <a class="tie">Lokeshwar.</a></h2>
+    <h1 class="title">Designer. Product Person.</h1>
+    <p>
+        Looking for a challenging role in a reputable organization to utilize my technical, programming,
+    </p>
+    <p>and management skills to enhance my knowledge about new and </p>
+    <p>emerging trends in the <a class="tie">IT sector</a>.</p>
+</div>
+<div class="text2">
+        <h5>Follow Me On </h5>
+    </div>
+<div class="row">
+
+
+<a href="https://github.com/Lokeshwarrobo"><i class="fa fa-github"  aria-hidden="true"></i></a>
+
+<a href="https://www.instagram.com/lokeshwar.robo/"><i class="fa fa-instagram"  aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/lokeshwar-reddy-6a1937171/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://www.youtube.com/channel/UC2vMdaJHlvNsfzPvpxPrEKw?view_as=subscriber"><i class="fa fa-youtube-play"  aria-hidden="true"></i></a>
+
+</div>
+</body>
+</html>
