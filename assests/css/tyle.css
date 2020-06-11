@@ -122,17 +122,19 @@ img {
 /* For medium devices (e.g. tablets) */
 @media (min-width: 420px) {
   img {
-    max-width: 48%;
+    margin-left: 2px;
+    max-width: 60%;
   }
 }
 @media (min-width: 720px){
     img {
+        margin-left: 2px;
         max-width: 60%;
     }
 }
 @media (min-width: 920px) {
     img {
-       max-width: 100%;
+       max-width: 60%;
     }
 }
 /* text on image */

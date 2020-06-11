@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <div class ='nav'>
@@ -26,11 +28,20 @@
     </ul>
     </div>
 
-<img src="/static/img/download.png" alt="">
-<div class="text">
-<h1>{{ object.Title }}</h1>
-    <p>{{ object.Description }}</p>
-    </div>
+<<section id="xop-about">
 
+    <div class="too">
+        <a href="#"><h1>{{ object.Title }}</h1></a>
+        <p>{{ object.Description }}</p>
+    </div>
+<div class="xop-container">
+<img src="{{object.Pic.url}}"  alt="" class="xop-text">
+ </div>
+    <div class="row">
+<a href="{{ object.git.url }}"><i class="fa fa-github" style="font-size:34px; " aria-hidden="true"></i></a>
+<a href="{{ object.utube.url }}"><i class="fa fa-youtube-play" style="font-size:34px; " aria-hidden="true"></i></a>
+
+</div>
+</section>
 </body>
 </html>

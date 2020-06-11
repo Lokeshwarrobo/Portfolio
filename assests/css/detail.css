@@ -116,14 +116,80 @@ input[type=checkbox]:checked ~ #menu{
 }
 /* navbar */
 
-img {
-    margin-top: 200px;
-    width: 30%;
-    margin-left: 400px;
+a {
+-webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
 }
-.text {
-    margin-top: 200px;
-    margin-left: 50px;
+
+#xop-about {
+padding: 60px 0;
+background: #172229;
+text-align: right;
+color: #fff;
+font-family: ‘Source Sans Pro’, sans-serif;
+font-size: 1.6rem;
+line-height: 1.3;
+text-rendering: optimizeLegibility;
+}
+
+.xop-container {
+max-width: 85%;
+width: 960px;
+margin: 0 auto;
+
+}
+
+.too {
     float: left;
-    color: #cc1111;
+    margin-left: 80px;
+    color: white;
+}
+.too:hover {
+color: black;
+}
+@media screen and (min-width: 200px){
+    img {
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 400px){
+    img {
+        width: 60%;
+    }
+
+}
+@media screen and (min-width: 600px){
+    img {
+        width: 60%;
+    }
+
+}
+@media screen and (min-width: 1500px){
+    img {
+        width: 50%;
+    }
+
+}
+.row a {
+
+   margin-left: 100px;
+
+}
+@media screen and (max-width: 467px){
+    .row a{
+        float: left;
+
+    }
+
+}
+@media screen and (max-width: 767px){
+    .row a{
+         float: left;
+
+
+    }
+
 }
