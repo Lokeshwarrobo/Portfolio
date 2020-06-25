@@ -26,23 +26,27 @@
         <li><a style="color: #ffffff" href="#">Contact</a></li>
     </ul>
     </div>
-<div class="Intro">
-    <h1>From writing articles on blog </h1>
-    <h1>to Web-designing</h1>
+<div>
+    <br>
+    <br>
+</div>
+<div class="ppp">
+    {% for arti in robo %}
+
+                <div class="post">
+
+                    <img src="{{ arti.Pic.url }}" alt="">
+
+                    <div class="post-s">
+                        <h2>{{ arti.Title }}</h2>
+                    </div>
+                </div>
+
+
+        <br>
+    {% endfor %}
 </div>
 
-    {% for arti in robo %}
-<section id="xop-about">
-
-    <div class="too">
-        <a href="{% url 'detail' arti.pk %}"><h1>{{ arti.Title }}</h1></a>
-    </div>
-<div class="xop-container">
-<img src="{{arti.Pic.url}}"  alt="" class="xop-text">
- </div>
-</section>
-        <br>
-  {% endfor %}
 </body>
 
 </html>
